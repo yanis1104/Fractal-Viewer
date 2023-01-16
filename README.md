@@ -57,7 +57,7 @@ Z² + 0.285 + 0.1i
 Prerequisites:
 - The graphic library used is SFML. You have to install it before running the program.
   https://www.sfml-dev.org/download.php
-- You need a NVIDIA graphic card to use it, with the CUDA toolkit intsalled on your computer.
+- You need a NVIDIA graphic card to use it, with the CUDA toolkit installed on your computer.
   https://developer.nvidia.com/cuda-downloads
 
 
