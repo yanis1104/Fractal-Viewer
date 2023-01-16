@@ -21,9 +21,9 @@ __global__ void fractal_kernel(int* d_pixels, int width, int height, double x_mi
     double z_imag = imag;
 
     /*
-        mandelbrot: z² + real + imag
-        z² - 1
-        z² -0.2 + 0.7i
+        mandelbrot: zï¿½ + real + imag
+        zï¿½ - 1
+        zï¿½ -0.2 + 0.7i
     */
     if (MANDELBROT) {
         CX = real;
@@ -43,7 +43,7 @@ __global__ void fractal_kernel(int* d_pixels, int width, int height, double x_mi
             break;
         }
         z_real = tmp_real * tmp_real - tmp_imag * tmp_imag + cx;
-        z_imag = 2 * tmp_real * tmp_imag + cy; // 2ab + b² avec (x*i)²
+        z_imag = 2 * tmp_real * tmp_imag + cy; // 2ab + bï¿½ avec (x*i)ï¿½
     }
 
     d_pixels[y * width + x] = value;
@@ -124,9 +124,11 @@ int main() {
     while (window.isOpen()) {
         sf::Event event;
         while (window.pollEvent(event)) {
-            switchMandelbrot(window, MANDELBROT, panelX, panelY, mandelbrotButton);
-            updateConstants(window, MANDELBROT, panelX, panelY, CX, CY, panelStep.step);
-            updateStep(window, panelStep);
+            if (!hideButtons) {
+                switchMandelbrot(window, MANDELBROT, panelX, panelY, mandelbrotButton);
+                updateConstants(window, MANDELBROT, panelX, panelY, CX, CY, panelStep.step);
+                updateStep(window, panelStep);
+            }
 
             if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::H) {
                 hideButtons = !hideButtons;
