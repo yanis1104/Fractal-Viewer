@@ -17,30 +17,42 @@ Features:
 Fractal Viewer GUI
 ![Fractal GUI](/examples/fractal_gui.png?raw=true "Graphic User Interface")
 
-
 Examples
 ![Mandelbrot set](/examples/mandelbrot.png?raw=true "Mandelbrot set")
 Z² + c
 
+<br/>
+<br/>
 
 ![Julia set](/examples/-0.55%2B0.71i.png?raw=true "Julia set")
 Z² - 0.55 + 0.71i
 
+<br/>
+<br/>
 
 ![Julia set](/examples/-1.27%2B0i.png?raw=true "Julia set")
 Z² - 1.27 + 0i
 
+<br/>
+<br/>
 
 ![Julia set](/examples/-1.73%2B0i.png?raw=true "Julia set")
 Z² - 1.73 + 0i
 
+<br/>
+<br/>
 
 ![Julia set](/examples/0.3%2B0.5i.png?raw=true "Julia set")
 Z² + 0.3 + 0.51i
 
+<br/>
+<br/>
 
 ![Julia set](/examples/0.285%2B0.1i.png?raw=true "Julia set")
 Z² + 0.285 + 0.1i
+
+<br/>
+<br/>
 
 Prerequisites:
 - The graphic library used is SFML. You have to install it before running the program.
