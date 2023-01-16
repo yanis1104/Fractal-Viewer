@@ -10,7 +10,7 @@ This software generates many kinds of fractals such as the Julia set and the Man
 Features:
 - Zoom on the image: Using the mouse wheel, it is possible to zoom-in and zoom-out on the position of the cursor.
 - Switch between Julia set and Mandelbrot set
-- Modify the constant values for the Julia set, showing different fractals
+- Modify the constant values for the Julia set, showing different fractals. The allowed values are between -4 and 4.
 - Modify the step value to increase or decrease the constant values with more precision
 - Hide the panels by pressing the 'H' key. Press again 'H' to show the panels.
 
